@@ -22,7 +22,7 @@ $(window).load(function() {
     $('#eventList table tbody').on('click', 'td a.linkshowevent', showEventInfo);
 
     // Add Event button click
-    $('#btnAddEvent').on('click', addEvent2);
+    $('#btnAddEvent').on('click', addEvent);
     // $('#addEvent').on('submit', addEvent2);
 
     // Delete Event link click
@@ -225,7 +225,7 @@ function showEventInfo(event) {
 }
 
 // Add User
-function addEvent2(event) {
+function addEvent(event) {
     event.preventDefault();
     console.log('test log')
     // Super basic validation - increase errorCount variable if any fields are blank
