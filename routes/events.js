@@ -16,7 +16,6 @@ router.get('/eventlist', function(req, res) {
  * POST to adduser.
  */
 router.post('/addevent', function(req, res) {
-    console.log('this ran')
     var db = req.db;
     var collection = db.get('eventlist');
     
